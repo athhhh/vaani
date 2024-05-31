@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Image Recognition</h2>
+<form id="image-form" enctype="multipart/form-data" method="post" action="{{ url_for('image_recognition_route') }}">
+    <div class="form-group">
+        <label for="image-upload">Upload Image:</label>
+        <input type="file" class="form-control-file" id="image-upload" name="image" accept="image/*" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Recognize Image</button>
+</form>
+<div id="image-preview" class="mt-4"></div>
+{% if description %}
+<div id="image-description" class="mt-4">
+    <h4>Image Description:</h4>
+    <p>{{ description }}</p>
+</div>
+{% endif %}
+{% endblock %}

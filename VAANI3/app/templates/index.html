@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to VAANI</h1>
+    <p class="lead">Empowering Inclusive Communication through AI</p>
+    <hr class="my-4">
+    <p>VAANI is a comprehensive platform that caters to the unique communication needs of deaf and blind communities. By harnessing the power of artificial intelligence, our platform enables seamless communication and information access, fostering inclusivity and empowerment.</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('about') }}" role="button">Learn More</a>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Text-to-Speech</h5>
+                <p class="card-text">Convert written text to spoken audio for blind users.</p>
+                <a href="{{ url_for('text_to_speech_route') }}" class="btn btn-primary">Try Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Speech-to-Text</h5>
+                <p class="card-text">Transcribe spoken audio to written text for deaf users.</p>
+                <a href="{{ url_for('speech_to_text_route') }}" class="btn btn-primary">Try Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Image Recognition</h5>
+                <p class="card-text">Describe visual content for blind users.</p>
+                <a href="{{ url_for('image_recognition_route') }}" class="btn btn-primary">Try Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

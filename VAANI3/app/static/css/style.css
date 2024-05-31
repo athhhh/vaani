@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #007bff !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+    background-color: #e9ecef;
+    padding: 4rem 2rem;
+    border-radius: 0.3rem;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+/* Form Styles */
+.form-group label {
+    font-weight: bold;
+}
+
+/* Chat Styles */
+.chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #dee2e6;
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+
+.message {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+}
+
+.user {
+    background-color: #e9ecef;
+    align-self: flex-end;
+}
+
+.assistant {
+    background-color: #007bff;
+    color: #fff;
+    align-self: flex-start;
+}
+
+/* Image Preview Styles */
+#image-preview img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
